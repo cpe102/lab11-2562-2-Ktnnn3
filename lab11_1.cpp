@@ -2,6 +2,8 @@
 
 using namespace std;
 
+unsigned long long int fibonacci(int x);
+
 //Write prototype of function fibonacci() here
 
 int main(){
@@ -15,6 +17,14 @@ int main(){
 	return 0;
 }
 
+unsigned long long int fibonacci(int x){
+	if(x==0) return 0;
+	if(x==1) return 1;
+	if(x>1){
+		return fibonacci(x-1) + fibonacci(x-2);
+	}
+
+}
 
 //Write definition of function fibonacci() here
 /*
